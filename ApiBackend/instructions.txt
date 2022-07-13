@@ -1,0 +1,41 @@
+######################################
+
+#navegar en android - usando Chrome del telefono emulado
+
+10.0.2.2:3000
+
+#####################################
+
+#Correr en Docker
+
+#create container - 1
+docker build . -t chris/dummy_dictionary_container
+
+#construir composicion todo - 2
+docker compose build
+
+#correr composicion todo - 3
+docker compose up
+
+########################################
+
+#Para insomnia
+
+#Crear usuario - POST - http://localhost:3000/register
+
+{
+	"username" : "chris",
+	"email" : "chris@uca.edu.sv",
+	"name" : "Christian",
+	"lastName" : "Lopez",
+	"password" : "asd123"
+}
+
+#Iniciar sesion - POST - http://localhost:3000/login
+
+{
+	"username" : "chris",
+	"password" : "asd123"
+}
+
+########################################
